@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Header */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: rgb(51, 43, 43);
+
+}
+.dark-mode h1{
+  color: white;
+}
+/* SEARCH component */
+.search{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  background-color: burlywood;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 1.5em;
+}
+.search input{
+  background-color: burlywood;
+  border: none;
+  padding: 10px;
+  width: 100%;
+
+}
+.search input:focus{
+  outline: none;
+}
+/* note.new */
+.note.new{
+  background-color: antiquewhite;
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: antiquewhite;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgb(255, 187, 0);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover{
+  background-color: bisque;
+  cursor: pointer;
+}
+/* Note single Item */
+.note{ 
+  background-color: #fef68f;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Note List */
+.notes-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+/* Container */
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
